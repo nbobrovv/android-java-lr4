@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextStartPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Начальная точка"/>
+
+    <EditText
+        android:id="@+id/editTextEndPoint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextStartPoint"
+        android:layout_marginTop="8dp"
+        android:hint="Конечная точка"/>
+
+    <EditText
+        android:id="@+id/editTextTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEndPoint"
+        android:layout_marginTop="8dp"
+        android:hint="Время"/>
+
+    <EditText
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTime"
+        android:layout_marginTop="8dp"
+        android:hint="Расстояние"/>
+
+    <EditText
+        android:id="@+id/editTextCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDistance"
+        android:layout_marginTop="8dp"
+        android:hint="Стоимость"/>
+
+    <EditText
+        android:id="@+id/editTextAdditionalInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextCost"
+        android:layout_marginTop="8dp"
+        android:hint="Подробности"/>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextAdditionalInfo"
+        android:layout_marginTop="16dp"
+        android:text="OK"/>
+</RelativeLayout>

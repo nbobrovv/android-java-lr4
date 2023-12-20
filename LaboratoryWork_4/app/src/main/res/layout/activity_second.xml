@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Информация о пользователе: "/>
+
+    <TextView
+        android:id="@+id/textViewRoute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewUserInfo"
+        android:layout_marginTop="8dp"
+        android:text="Маршрут: "/>
+
+    <Button
+        android:id="@+id/btnSetPath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewRoute"
+        android:layout_marginTop="16dp"
+        android:text="Задать путь"/>
+
+    <Button
+        android:id="@+id/btnCallTaxi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSetPath"
+        android:layout_marginTop="16dp"
+        android:text="Вызвать такси"
+        android:enabled="false"/>
+</RelativeLayout>
